@@ -2,12 +2,16 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Survey on Dilemmas</title>
 
     <style>
+
         :root {
             --primary-color: #2c3e50;
             --accent-color: #3498db;
@@ -16,70 +20,111 @@
             --border-color: #ddd;
         }
 
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            font-family:
+                'Segoe UI',
+                Tahoma,
+                Geneva,
+                Verdana,
+                sans-serif;
+
             background-color: var(--bg-color);
+
             color: var(--text-color);
+
             line-height: 1.6;
+
             margin: 0;
+
             padding: 40px 20px;
 
             display: flex;
+
             justify-content: center;
+
             align-items: center;
 
             min-height: 100vh;
         }
 
+
         .survey-card,
         .thank-you-card {
+
             background: #ffffff;
+
             padding: 40px;
+
             border-radius: 12px;
 
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            box-shadow:
+                0 8px 20px rgba(0, 0, 0, 0.08);
 
             max-width: 600px;
+
             width: 100%;
         }
 
+
         .thank-you-card {
+
             display: none;
+
             text-align: center;
+
             padding: 80px 40px;
         }
 
+
         .thank-you-card h1 {
+
             color: var(--accent-color);
+
             font-size: 2.5rem;
+
             margin-bottom: 10px;
         }
 
+
         h1 {
+
             color: var(--primary-color);
+
             text-align: center;
 
             margin-top: 0;
+
             margin-bottom: 30px;
         }
 
+
         h2 {
+
             color: var(--primary-color);
+
             font-size: 1.2rem;
 
-            border-bottom: 2px solid var(--border-color);
+            border-bottom:
+                2px solid var(--border-color);
 
             padding-bottom: 8px;
 
             margin-top: 30px;
+
             margin-bottom: 20px;
         }
+
 
         .form-group {
+
             margin-bottom: 20px;
         }
 
+
         label {
+
             display: block;
 
             font-weight: 600;
@@ -87,38 +132,52 @@
             margin-bottom: 8px;
         }
 
+
         select {
+
             width: 100%;
 
             padding: 12px;
 
-            border: 1px solid var(--border-color);
+            border:
+                1px solid var(--border-color);
+
             border-radius: 6px;
 
             font-size: 1rem;
 
             background-color: #fafafa;
+
             color: var(--text-color);
 
-            transition: border-color 0.3s ease;
+            transition:
+                border-color 0.3s ease;
         }
+
 
         select:focus {
+
             outline: none;
 
-            border-color: var(--accent-color);
+            border-color:
+                var(--accent-color);
         }
 
+
         .question-text {
+
             font-weight: 600;
 
             margin-top: 30px;
+
             margin-bottom: 15px;
 
             color: var(--primary-color);
         }
 
+
         .radio-option {
+
             display: flex;
 
             align-items: flex-start;
@@ -133,14 +192,19 @@
 
             border-radius: 6px;
 
-            transition: background-color 0.2s;
+            transition:
+                background-color 0.2s;
         }
 
+
         .radio-option:hover {
+
             background-color: #f9f9f9;
         }
 
+
         .radio-option input[type="radio"] {
+
             margin-top: 4px;
 
             margin-right: 12px;
@@ -150,8 +214,11 @@
             cursor: pointer;
         }
 
+
         button {
-            background-color: var(--accent-color);
+
+            background-color:
+                var(--accent-color);
 
             color: #ffffff;
 
@@ -171,14 +238,19 @@
 
             margin-top: 30px;
 
-            transition: background-color 0.3s ease;
+            transition:
+                background-color 0.3s ease;
         }
 
+
         button:hover {
+
             background-color: #2980b9;
         }
 
+
         #status {
+
             margin-top: 20px;
 
             text-align: center;
@@ -187,23 +259,32 @@
 
             font-weight: 600;
         }
+
     </style>
+
 </head>
 
 
 <body>
 
 
-    <!-- Survey Container -->
+    <!-- Survey -->
 
-    <div class="survey-card" id="survey-container">
+    <div
+        class="survey-card"
+        id="survey-container"
+    >
 
-        <h1>Survey on Dilemmas</h1>
+        <h1 id="survey-title">
+            Survey on Dilemmas
+        </h1>
 
 
         <!-- About You -->
 
-        <h2>About You</h2>
+        <h2 id="about-title">
+            About You
+        </h2>
 
 
         <!-- Age -->
@@ -211,30 +292,53 @@
         <div class="form-group">
 
             <label for="agegroup">
+
                 Age:
+
             </label>
+
 
             <select id="agegroup">
 
-                <option value="0">0–10</option>
+                <option value="0">
+                    0–10
+                </option>
 
-                <option value="1">11–19</option>
+                <option value="1">
+                    11–19
+                </option>
 
-                <option value="2">20–29</option>
+                <option value="2">
+                    20–29
+                </option>
 
-                <option value="3">30–39</option>
+                <option value="3">
+                    30–39
+                </option>
 
-                <option value="4">40–49</option>
+                <option value="4">
+                    40–49
+                </option>
 
-                <option value="5">50–59</option>
+                <option value="5">
+                    50–59
+                </option>
 
-                <option value="6">60–69</option>
+                <option value="6">
+                    60–69
+                </option>
 
-                <option value="7">70–79</option>
+                <option value="7">
+                    70–79
+                </option>
 
-                <option value="8">80–89</option>
+                <option value="8">
+                    80–89
+                </option>
 
-                <option value="9">90+</option>
+                <option value="9">
+                    90+
+                </option>
 
                 <option value="10">
                     Prefer not to say
@@ -250,8 +354,11 @@
         <div class="form-group">
 
             <label for="gender">
+
                 Gender:
+
             </label>
+
 
             <select id="gender">
 
@@ -281,8 +388,11 @@
         <div class="form-group">
 
             <label for="religion">
+
                 Religion / Belief:
+
             </label>
+
 
             <select id="religion">
 
@@ -349,15 +459,18 @@
 
         <!-- Questions -->
 
-        <h2>Questions</h2>
+        <h2 id="questions-title">
+            Questions
+        </h2>
 
 
         <!-- Q1 -->
 
         <div class="question-text">
 
-            1. When moral principles conflict with the greater good,
-            which do you generally prioritize?
+            1. When moral principles conflict
+            with the greater good, which do
+            you generally prioritize?
 
         </div>
 
@@ -370,8 +483,10 @@
                 value="true"
             >
 
-            Following moral principles/duties,
-            even if the outcome is worse
+            <span>
+                Following moral principles/duties,
+                even if the outcome is worse
+            </span>
 
         </label>
 
@@ -384,8 +499,11 @@
                 value="false"
             >
 
-            Achieving the greatest overall good,
-            even if it requires breaking a moral principle
+            <span>
+                Achieving the greatest overall good,
+                even if it requires breaking a moral
+                principle
+            </span>
 
         </label>
 
@@ -394,9 +512,10 @@
 
         <div class="question-text">
 
-            2. You are hiding an innocent person from someone
-            who intends to murder them. The murderer asks whether
-            the person is hiding in your house.
+            2. You are hiding an innocent person
+            from someone who intends to murder
+            them. The murderer asks whether the
+            person is hiding in your house.
 
         </div>
 
@@ -409,7 +528,10 @@
                 value="true"
             >
 
-            Tell the truth because lying is morally wrong
+            <span>
+                Tell the truth because lying is
+                morally wrong
+            </span>
 
         </label>
 
@@ -422,8 +544,10 @@
                 value="false"
             >
 
-            Lie because protecting the innocent person
-            is more important
+            <span>
+                Lie because protecting the innocent
+                person is more important
+            </span>
 
         </label>
 
@@ -432,10 +556,12 @@
 
         <div class="question-text">
 
-            3. Publicly executing one completely innocent person
-            would scare 100 potential criminals enough to prevent
-            them from committing serious crimes, potentially saving
-            many lives. Would you order the execution?
+            3. Publicly executing one completely
+            innocent person would scare 100
+            potential criminals enough to prevent
+            them from committing serious crimes,
+            potentially saving many lives.
+            Would you order the execution?
 
         </div>
 
@@ -448,7 +574,9 @@
                 value="false"
             >
 
-            Yes
+            <span>
+                Yes
+            </span>
 
         </label>
 
@@ -461,7 +589,9 @@
                 value="true"
             >
 
-            No
+            <span>
+                No
+            </span>
 
         </label>
 
@@ -470,9 +600,11 @@
 
         <div class="question-text">
 
-            4. A runaway trolley will kill 5 people.
-            You can pull a lever and divert it onto another track,
-            where it will kill 1 person instead. Do you pull the lever?
+            4. A runaway trolley will kill
+            5 people. You can pull a lever and
+            divert it onto another track, where
+            it will kill 1 person instead.
+            Do you pull the lever?
 
         </div>
 
@@ -485,7 +617,9 @@
                 value="false"
             >
 
-            Yes
+            <span>
+                Yes
+            </span>
 
         </label>
 
@@ -498,7 +632,9 @@
                 value="true"
             >
 
-            No
+            <span>
+                No
+            </span>
 
         </label>
 
@@ -508,8 +644,9 @@
         <div class="question-text">
 
             5. A trolley will kill 5 people.
-            The only way to stop it is to push a stranger
-            onto the tracks, killing them but saving the 5 people.
+            The only way to stop it is to push
+            a stranger onto the tracks, killing
+            them but saving the 5 people.
             Do you push them?
 
         </div>
@@ -523,7 +660,9 @@
                 value="false"
             >
 
-            Yes
+            <span>
+                Yes
+            </span>
 
         </label>
 
@@ -536,7 +675,9 @@
                 value="true"
             >
 
-            No
+            <span>
+                No
+            </span>
 
         </label>
 
@@ -545,11 +686,13 @@
 
         <div class="question-text">
 
-            6. A person is known with certainty to be planning
-            to commit a serious crime in the future. Punishing them
-            now would prevent the crime and save many people.
-            Is it morally acceptable to punish them before they
-            commit the crime?
+            6. A person is known with certainty
+            to be planning to commit a serious
+            crime in the future. Punishing them
+            now would prevent the crime and save
+            many people. Is it morally acceptable
+            to punish them before they commit
+            the crime?
 
         </div>
 
@@ -562,7 +705,9 @@
                 value="false"
             >
 
-            Yes
+            <span>
+                Yes
+            </span>
 
         </label>
 
@@ -575,7 +720,9 @@
                 value="true"
             >
 
-            No
+            <span>
+                No
+            </span>
 
         </label>
 
@@ -584,11 +731,13 @@
 
         <div class="question-text">
 
-            7. A terrorist has planted a bomb that could kill
-            many innocent people. The terrorist has been captured,
-            but refuses to reveal where the bomb is.
-            Is it morally acceptable to torture the terrorist
-            to obtain the location of the bomb?
+            7. A terrorist has planted a bomb
+            that could kill many innocent people.
+            The terrorist has been captured, but
+            refuses to reveal where the bomb is.
+            Is it morally acceptable to torture
+            the terrorist to obtain the location
+            of the bomb?
 
         </div>
 
@@ -601,7 +750,9 @@
                 value="false"
             >
 
-            Yes
+            <span>
+                Yes
+            </span>
 
         </label>
 
@@ -614,14 +765,19 @@
                 value="true"
             >
 
-            No
+            <span>
+                No
+            </span>
 
         </label>
 
 
         <!-- Submit -->
 
-        <button onclick="submitSurvey()">
+        <button
+            onclick="submitSurvey()"
+            id="submit-button"
+        >
             Submit Responses
         </button>
 
@@ -631,31 +787,366 @@
     </div>
 
 
-    <!-- Thank You Slide -->
+    <!-- Thank You -->
 
     <div
         class="thank-you-card"
         id="thank-you-slide"
     >
 
-        <h1>
+        <h1 id="thank-you-title">
             Thank You!
         </h1>
 
-        <p>
-            Your responses have been successfully submitted.
+
+        <p id="thank-you-message">
+            Your responses have been
+            successfully submitted.
         </p>
 
-        <p>
-            We appreciate your contribution to this survey.
+
+        <p id="thank-you-message-2">
+            We appreciate your contribution
+            to this survey.
         </p>
 
     </div>
 
 
-    <!-- JavaScript -->
-
     <script>
+
+
+        /*
+         * ==========================================
+         * LANGUAGE DETECTION
+         * ==========================================
+         */
+
+
+        const browserLanguage =
+            navigator.language ||
+            navigator.userLanguage;
+
+
+        const isKorean =
+            browserLanguage
+                .toLowerCase()
+                .startsWith("ko");
+
+
+        /*
+         * ==========================================
+         * TRANSLATIONS
+         * ==========================================
+         */
+
+
+        function translateToKorean() {
+
+            document.documentElement.lang = "ko";
+
+
+            /*
+             * Main titles
+             */
+
+            document.getElementById(
+                "survey-title"
+            ).textContent =
+                "도덕적 딜레마 설문조사";
+
+
+            document.getElementById(
+                "about-title"
+            ).textContent =
+                "기본 정보";
+
+
+            document.getElementById(
+                "questions-title"
+            ).textContent =
+                "질문";
+
+
+            /*
+             * Demographics
+             */
+
+            document.querySelector(
+                'label[for="agegroup"]'
+            ).textContent =
+                "나이:";
+
+
+            document.querySelector(
+                'label[for="gender"]'
+            ).textContent =
+                "성별:";
+
+
+            document.querySelector(
+                'label[for="religion"]'
+            ).textContent =
+                "종교 / 신념:";
+
+
+            /*
+             * Age
+             */
+
+            document.querySelector(
+                '#agegroup option[value="10"]'
+            ).textContent =
+                "응답하고 싶지 않음";
+
+
+            /*
+             * Gender
+             */
+
+            const genderOptions =
+                document.querySelectorAll(
+                    "#gender option"
+                );
+
+
+            genderOptions[0].textContent =
+                "남성";
+
+            genderOptions[1].textContent =
+                "여성";
+
+            genderOptions[2].textContent =
+                "기타";
+
+            genderOptions[3].textContent =
+                "응답하고 싶지 않음";
+
+
+            /*
+             * Religion
+             */
+
+            const religionOptions =
+                document.querySelectorAll(
+                    "#religion option"
+                );
+
+
+            religionOptions[0].textContent =
+                "가톨릭";
+
+            religionOptions[1].textContent =
+                "개신교";
+
+            religionOptions[2].textContent =
+                "정교회";
+
+            religionOptions[3].textContent =
+                "이슬람교";
+
+            religionOptions[4].textContent =
+                "힌두교";
+
+            religionOptions[5].textContent =
+                "불교";
+
+            religionOptions[6].textContent =
+                "유대교";
+
+            religionOptions[7].textContent =
+                "시크교";
+
+            religionOptions[8].textContent =
+                "자이나교";
+
+            religionOptions[9].textContent =
+                "기타";
+
+            religionOptions[10].textContent =
+                "불가지론";
+
+            religionOptions[11].textContent =
+                "무신론";
+
+            religionOptions[12].textContent =
+                "무교";
+
+            religionOptions[13].textContent =
+                "응답하고 싶지 않음";
+
+
+            /*
+             * Questions
+             */
+
+            const questions =
+                document.querySelectorAll(
+                    ".question-text"
+                );
+
+
+            questions[0].textContent =
+                "1. 도덕적 원칙과 더 큰 선이 충돌할 때, 일반적으로 어느 것을 우선시합니까?";
+
+
+            questions[1].textContent =
+                "2. 당신은 살해하려는 사람으로부터 무고한 사람을 숨겨주고 있습니다. 살인자가 그 사람이 당신의 집에 숨어 있는지 묻습니다.";
+
+
+            questions[2].textContent =
+                "3. 완전히 무고한 한 사람을 공개적으로 처형하면 잠재적인 범죄자 100명이 심각한 범죄를 저지르지 않도록 막을 수 있고, 그 결과 많은 생명을 구할 수 있다고 합시다. 당신은 그 사람의 처형을 명령하겠습니까?";
+
+
+            questions[3].textContent =
+                "4. 달려오는 전차가 5명을 치어 죽이려 합니다. 레버를 당기면 전차를 다른 선로로 돌릴 수 있지만, 그 선로에서는 1명이 죽게 됩니다. 레버를 당기겠습니까?";
+
+
+            questions[4].textContent =
+                "5. 전차가 5명을 치어 죽이려 합니다. 전차를 멈추는 유일한 방법은 낯선 사람 한 명을 선로로 밀어 그 사람을 죽이는 것이며, 그렇게 하면 5명을 구할 수 있습니다. 그 사람을 밀겠습니까?";
+
+
+            questions[5].textContent =
+                "6. 어떤 사람이 미래에 심각한 범죄를 저지를 것이 확실하다고 합시다. 지금 그 사람을 처벌하면 범죄를 막고 많은 사람을 구할 수 있습니다. 아직 범죄를 저지르지 않은 사람을 미리 처벌하는 것이 도덕적으로 허용된다고 생각합니까?";
+
+
+            questions[6].textContent =
+                "7. 테러리스트가 많은 무고한 사람들을 죽일 수 있는 폭탄을 설치했습니다. 테러리스트는 체포되었지만 폭탄의 위치를 밝히기를 거부합니다. 폭탄의 위치를 알아내기 위해 테러리스트를 고문하는 것이 도덕적으로 허용된다고 생각합니까?";
+
+
+            /*
+             * Q1 answers
+             */
+
+            const q1Options =
+                document.querySelectorAll(
+                    'input[name="q1"]'
+                );
+
+
+            q1Options[0]
+                .parentElement
+                .querySelector("span")
+                .textContent =
+                "결과가 더 나쁘더라도 도덕적 원칙과 의무를 따른다";
+
+
+            q1Options[1]
+                .parentElement
+                .querySelector("span")
+                .textContent =
+                "도덕적 원칙을 어기더라도 전체적인 선을 최대화한다";
+
+
+            /*
+             * Q2 answers
+             */
+
+            const q2Options =
+                document.querySelectorAll(
+                    'input[name="q2"]'
+                );
+
+
+            q2Options[0]
+                .parentElement
+                .querySelector("span")
+                .textContent =
+                "거짓말은 도덕적으로 잘못되었기 때문에 진실을 말한다";
+
+
+            q2Options[1]
+                .parentElement
+                .querySelector("span")
+                .textContent =
+                "무고한 사람을 보호하는 것이 더 중요하기 때문에 거짓말한다";
+
+
+            /*
+             * Q3-Q7 answers
+             */
+
+            const yesNoOptions =
+                document.querySelectorAll(
+                    'input[name="q3"], input[name="q4"], input[name="q5"], input[name="q6"], input[name="q7"]'
+                );
+
+
+            yesNoOptions.forEach(
+                function (input) {
+
+                    const span =
+                        input.parentElement
+                            .querySelector("span");
+
+
+                    if (input.value === "false") {
+
+                        span.textContent =
+                            "예";
+
+                    } else {
+
+                        span.textContent =
+                            "아니요";
+                    }
+
+                }
+            );
+
+
+            /*
+             * Submit button
+             */
+
+            document.getElementById(
+                "submit-button"
+            ).textContent =
+                "응답 제출";
+
+
+            /*
+             * Thank-you screen
+             */
+
+            document.getElementById(
+                "thank-you-title"
+            ).textContent =
+                "감사합니다!";
+
+
+            document.getElementById(
+                "thank-you-message"
+            ).textContent =
+                "응답이 성공적으로 제출되었습니다.";
+
+
+            document.getElementById(
+                "thank-you-message-2"
+            ).textContent =
+                "설문조사에 참여해 주셔서 감사합니다.";
+
+        }
+
+
+        /*
+         * Apply Korean translation
+         * if browser language is Korean.
+         */
+
+        if (isKorean) {
+
+            translateToKorean();
+
+        }
+
+
+        /*
+         * ==========================================
+         * SUPABASE
+         * ==========================================
+         */
+
 
         const SUPABASE_URL =
             "https://piavxcncswrweikkvhar.supabase.co";
@@ -666,10 +1157,11 @@
 
 
         /*
-         * Gets the selected answer
-         * and converts "true"/"false"
-         * into an actual JavaScript boolean.
+         * ==========================================
+         * GET ANSWER
+         * ==========================================
          */
+
 
         function getAnswer(question) {
 
@@ -687,17 +1179,24 @@
 
 
             return selected.value === "true";
+
         }
 
 
         /*
-         * Submit survey
+         * ==========================================
+         * SUBMIT SURVEY
+         * ==========================================
          */
+
 
         async function submitSurvey() {
 
+
             const status =
-                document.getElementById("status");
+                document.getElementById(
+                    "status"
+                );
 
 
             const surveyContainer =
@@ -739,7 +1238,7 @@
 
 
             /*
-             * Make sure every question
+             * Check that every question
              * has been answered
              */
 
@@ -761,10 +1260,17 @@
 
             ) {
 
+
                 status.textContent =
-                    "Please answer all seven questions.";
+                    isKorean
+
+                        ? "모든 질문에 답변해 주세요."
+
+                        : "Please answer all seven questions.";
+
 
                 return;
+
             }
 
 
@@ -774,27 +1280,37 @@
 
             const data = {
 
+
                 agegroup:
+
                     Number(
+
                         document.getElementById(
                             "agegroup"
                         ).value
+
                     ),
 
 
                 gender:
+
                     Number(
+
                         document.getElementById(
                             "gender"
                         ).value
+
                     ),
 
 
                 religion:
+
                     Number(
+
                         document.getElementById(
                             "religion"
                         ).value
+
                     ),
 
 
@@ -811,6 +1327,7 @@
                 q6: q6,
 
                 q7: q7
+
             };
 
 
@@ -819,7 +1336,13 @@
              */
 
             status.textContent =
-                "Submitting...";
+
+                isKorean
+
+                    ? "제출 중..."
+
+                    : "Submitting...";
+
 
             status.style.color =
                 "#333";
@@ -827,11 +1350,13 @@
 
             try {
 
+
                 /*
                  * Send data to Supabase
                  */
 
                 const response =
+
                     await fetch(
 
                         SUPABASE_URL +
@@ -843,6 +1368,7 @@
 
 
                             headers: {
+
 
                                 "apikey":
                                     SUPABASE_KEY,
@@ -867,14 +1393,16 @@
                                 JSON.stringify(data)
 
                         }
+
                     );
 
 
                 /*
-                 * Check for an error
+                 * Check for errors
                  */
 
                 if (!response.ok) {
+
 
                     const error =
                         await response.text();
@@ -888,10 +1416,18 @@
 
 
                     status.textContent =
-                        "Error: " + error;
+
+                        isKorean
+
+                            ? "오류가 발생했습니다: " +
+                              error
+
+                            : "Error: " +
+                              error;
 
 
                     return;
+
                 }
 
 
@@ -907,7 +1443,11 @@
                     "block";
 
 
-            } catch (error) {
+            }
+
+
+            catch (error) {
+
 
                 console.error(error);
 
@@ -917,13 +1457,19 @@
 
 
                 status.textContent =
-                    "Could not connect to Supabase.";
+
+                    isKorean
+
+                        ? "Supabase에 연결할 수 없습니다."
+
+                        : "Could not connect to Supabase.";
 
             }
 
         }
 
     </script>
+
 
 </body>
 
