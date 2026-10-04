@@ -220,25 +220,45 @@
 
             <select id="agegroup">
 
-                <option value="0">0–10</option>
+                <option value="0">
+                    0–10
+                </option>
 
-                <option value="1">11–19</option>
+                <option value="1">
+                    11–19
+                </option>
 
-                <option value="2">20–29</option>
+                <option value="2">
+                    20–29
+                </option>
 
-                <option value="3">30–39</option>
+                <option value="3">
+                    30–39
+                </option>
 
-                <option value="4">40–49</option>
+                <option value="4">
+                    40–49
+                </option>
 
-                <option value="5">50–59</option>
+                <option value="5">
+                    50–59
+                </option>
 
-                <option value="6">60–69</option>
+                <option value="6">
+                    60–69
+                </option>
 
-                <option value="7">70–79</option>
+                <option value="7">
+                    70–79
+                </option>
 
-                <option value="8">80–89</option>
+                <option value="8">
+                    80–89
+                </option>
 
-                <option value="9">90+</option>
+                <option value="9">
+                    90+
+                </option>
 
                 <option value="10">
                     Prefer not to say
@@ -355,11 +375,11 @@
 
         <div class="form-group">
 
-            <label for="continent">
+            <label for="region">
                 Region:
             </label>
 
-            <select id="continent">
+            <select id="region">
 
                 <option value="0">
                     North America
@@ -803,7 +823,7 @@
 
 
             document.querySelector(
-                'label[for="continent"]'
+                'label[for="region"]'
             ).textContent =
                 "지역:";
 
@@ -899,30 +919,30 @@
              * Region
              */
 
-            const continentOptions =
+            const regionOptions =
                 document.querySelectorAll(
-                    "#continent option"
+                    "#region option"
                 );
 
-            continentOptions[0].textContent =
+            regionOptions[0].textContent =
                 "북아메리카";
 
-            continentOptions[1].textContent =
+            regionOptions[1].textContent =
                 "라틴아메리카 및 남아메리카";
 
-            continentOptions[2].textContent =
+            regionOptions[2].textContent =
                 "유럽";
 
-            continentOptions[3].textContent =
+            regionOptions[3].textContent =
                 "서아시아";
 
-            continentOptions[4].textContent =
+            regionOptions[4].textContent =
                 "동아시아";
 
-            continentOptions[5].textContent =
+            regionOptions[5].textContent =
                 "아프리카";
 
-            continentOptions[6].textContent =
+            regionOptions[6].textContent =
                 "오세아니아";
 
 
@@ -965,7 +985,7 @@
 
 
             /*
-             * Answers
+             * Q1 Answers
              */
 
             const q1Options =
@@ -986,6 +1006,10 @@
                 "도덕적 원칙을 어기더라도 공리를 최대화한다";
 
 
+            /*
+             * Q2 Answers
+             */
+
             const q2Options =
                 document.querySelectorAll(
                     'input[name="q2"]'
@@ -1005,7 +1029,7 @@
 
 
             /*
-             * Q3-Q7 are Yes / No
+             * Q3-Q7 Answers
              */
 
             for (
@@ -1148,17 +1172,11 @@
             if (
 
                 q1 === null ||
-
                 q2 === null ||
-
                 q3 === null ||
-
                 q4 === null ||
-
                 q5 === null ||
-
                 q6 === null ||
-
                 q7 === null
 
             ) {
@@ -1202,10 +1220,10 @@
                     ),
 
 
-                continent:
+                region:
                     Number(
                         document.getElementById(
-                            "continent"
+                            "region"
                         ).value
                     ),
 
